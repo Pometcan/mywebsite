@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    markdown {
+        blockquote {
+            @apply m-1 bg-Surface0 border-l-4 border-Overlay0 p-1 rounded-lg;
+        }
+        hr {
+            @apply border-2 border-Surface2 rounded-xl my-2;
+        }
+        p {
+            @apply text-Text text-base antialiased text-left indent-4;
+        }
+        a {
+            @apply text-Mauve text-lg;
+        }
+        img {
+            @apply rounded-lg mx-auto w-full h-auto;
+        }
+        video {
+            @apply rounded-lg mx-auto w-full h-auto;
+        }
+        h1 {
+            @apply text-Peach text-4xl text-left;
+        }
+        h2 {
+            @apply text-Peach text-3xl text-left;
+        }
+        h3 {
+            @apply text-Peach text-2xl text-left;
+        }
+        h4 {
+            @apply text-Peach text-xl text-left;
+        }
+        h5 {
+            @apply text-Peach text-lg text-left;
+        }
+        h6 {
+            @apply text-Peach text-base text-left;
+        }
+        table {
+            @apply bg-Mantle  table-fixed rounded-xl w-full overflow-hidden overflow-x-auto;
+        }
+        tr {
+            @apply border-2 border-Surface2;
+        }
+        thead {
+            @apply bg-Base  rounded-t-xl text-left font-bold text-Mauve text-lg;
+        }
+        th {
+            @apply p-1 border border-Surface2;
+        }
+        tbody {
+            @apply bg-Surface0 rounded-b-xl  text-Text text-base;
+        }
+        td {
+            @apply p-1 border border-Surface2;
+        }
+        pre {
+            @apply bg-Surface0 border-2 border-Surface2 rounded-xl p-3 w-full overflow-auto;
+        }
+        code {
+            @apply font-mono text-Text;
+        }
+        ul {
+            @apply list-disc list-inside p-1 pl-6;
+        }
+        ol {
+            @apply list-decimal list-inside p-1 pl-6;
+        }
+        li {
+            @apply text-Text font-normal;
+        }
+        del {
+            @apply text-lg  line-through decoration-2 decoration-Overlay2;
+        }
+    }
+}
